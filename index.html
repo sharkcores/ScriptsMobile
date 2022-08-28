@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ScriptCore/Scripts - Mobile</title>
+    <title>ScriptCore/Scripts</title>
     <link rel="stylesheet" href="C:\Users\Alex\Desktop\vs\ScriptCore.css">
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -11,7 +11,7 @@
 <body>
     <style>
 body::-webkit-scrollbar {
-    width: 5px;               /* width of the entire scrollbar */
+    width: 1px;               /* width of the entire scrollbar */
   }
   body::-webkit-scrollbar-track {
     background: rgb(14, 14, 14);        /* color of the tracking area */
@@ -22,15 +22,15 @@ body::-webkit-scrollbar {
     border: 3px solid rgb(63, 63, 63);  /* creates padding around scroll thumb */
   }
 
-  .scripts::-webkit-scrollbar {
+  #scripts::-webkit-scrollbar {
     width: 5px;               /* width of the entire scrollbar */
   }
-  .scripts::-webkit-scrollbar-track {
+  #scripts::-webkit-scrollbar-track {
     background: rgb(14, 14, 14);        /* color of the tracking area */
   }
-  .scripts::-webkit-scrollbar-thumb {
+  #scripts::-webkit-scrollbar-thumb {
     background-color: rgb(29, 29, 29);    /* color of the scroll thumb */
-    border-radius: 20px;       /* roundness of the scroll thumb */
+    border-radius: 5px;       /* roundness of the scroll thumb */
     border: 3px solid rgb(63, 63, 63);  /* creates padding around scroll thumb */
   }
 
@@ -59,6 +59,7 @@ body{
     align-items: center;
     flex-direction: column;
     background-size:cover;
+
 }
 body{
     background-position: center;
@@ -72,13 +73,10 @@ body{
    margin-top:  10px;
 }
 .MainContent{
-    margin-top: 50px;
+    margin-top: 30px;
     display: block;
     align-items: center;
 user-select: none;
-background-color: rgba(63, 63, 63, 0.308);
--webkit-backdrop-filter: blur(5px);
-backdrop-filter: blur(5px);
 
 
 }
@@ -104,23 +102,34 @@ backdrop-filter: blur(5px);
     user-select: none;
     
 }
+.SearchBtn:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+.TypeBox2:hover{
+    background-color: black;
+    color: rgb(255, 255, 255);
+}
 
 .Topbarrr{
-    background-color: black;
+    background-color:  rgb(29, 29, 29);
     z-index: 999;
     user-select: none;
     width: 100vw;
     position: fixed;
     margin-top: -8px;
+    box-shadow: 0px 0px 20px rgb(8, 8, 8);
+    border: 1px black solid;
+border-radius: none;
 }
 
-.Btn1{
+.Btn1, .Btn2{
     display: inline-block;
     border-style: none;
     border-radius: 5px;
     width: 100px;
     height: 40px;
-    background-color: black;
+    background-color:  rgb(29, 29, 29);
     font-size: larger;
     color: white;
     font-family: sans-serif;
@@ -129,22 +138,23 @@ transition: 0.3s;
 }
 
 .link{
-    color: black;
+    color: transparent;
 }
 
-.ToS{
+.MainContent{
     border-style: none;
     background-color: black;
     color: white;
     text-align: center;
-    margin-top: 150px;
     padding-left: 10px;
     padding-right: 10px;
+    margin-left: -400px;
     padding-top: 10px;
     padding-bottom: 10px;
     margin-bottom: 20px;
     font-family: sans-serif;
     user-select: none;
+    margin-top: -152px;
     transition: 0.3s;
     box-shadow: 0px 0px 10px orangered;
     border: 1px orangered solid;
@@ -152,22 +162,29 @@ border-radius: none;
 background-color: transparent;
 color: white;
 background-color: rgb(20, 20, 20);
-
+width: 21.961932650073205vw;
+height: 19.7869101978691vh;
 }
-
+.MainContent:hover{
+    opacity: 50%;
+}
 .TosTitle{
-    font-size: larger;
+    font-size: 1.25em;
     user-select: none;
     color: green;
     text-decoration: underline;
 }
 
-.TosTitle2{
+.TosTitle2, .ToSTitle3{
     font-size: larger;
     user-select: none;
-    color: white;
+    color: rgb(255, 255, 255);
+    text-align: center;
 }
-.scripts{
+.ToSTitle3{
+    margin-top: 11px;
+}
+#scripts{
     overflow-y: scroll;
     overflow-x: scroll;
     background-color: black;
@@ -178,7 +195,7 @@ height: 450px;
 width: 300px;
 border-radius: 5px;
 padding-left: 10px;
-padding-right: -30px;
+padding-right: 10px;
 box-shadow: 0px 0px 10px orangered;
     border: 1px orangered solid;
 border-radius: none;
@@ -195,6 +212,70 @@ body{
     user-select: none;
     display: block;
     color: green;
+}
+.Btn2{
+    color:orangered
+}
+#links{
+    scroll-behavior: smooth;
+    background-color: transparent;
+    box-shadow: 0px 0px 10px orangered;
+    border: 1px orangered solid;
+border-radius: none;
+    margin-left: 0px;
+    margin-top: -0px;
+    display: inline-block;
+    margin-bottom: 0px;
+    margin-top: 120px;
+    color: white;
+    font-family: sans-serif;
+    align-items: center;
+    user-select: none
+}
+#btncat, #btncat1, #close, #btncats, #btncat3, #btncat4, #btncat5, #btncat6, #btncat7{
+    background-color: transparent;
+    box-shadow: 0px 0px 10px orangered;
+    border: 1px orangered solid;
+border-radius: none;
+color: white;
+height: 4.566210045662101vh;
+width:  fit-content;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 0.938em;
+}
+#btncat1{
+    width: 120px;
+    height: 46px;
+    font-size: larger;
+}
+#close{
+    width:  200px;
+    height: 50px;
+    font-size: 1.563em;
+    margin-top: 140.00000000000003px;
+    margin-left: 200px;
+}
+#close:hover{
+    background-color: black;
+}
+#btncat:hover{
+
+    background-color: black;
+}
+#btncat1:hover{
+
+background-color: black;
+}
+#btncat1{
+    margin-bottom: 10px;
+}
+.realll{
+    text-align: center;
+}
+#linkss{
+    color: transparent;
 }
     </style>
 <div class="Topbarrr">
@@ -227,50 +308,74 @@ body{
 <a class="link" href="https://www.shark-core.com" target="_blank">
     <button class="Btn1">SharkCore</button>
 </a>
+
+
+
 </div>
-<p class="ToS"> <span class="ToSTitle2">All Scripts</span><br> <br> All our current scripts are listed below. <br>  If Some scripts are too long, <br> they will get converted into a link.</p>
 
 
-<div class="scripts">
+<div id="links">
+    <p class="ToSTitle3">Games</p>
+    <a href="#brookhaven" id="linkss">
+        <button id="btncat">Brookhaven</button>
+    </a>
+    <a href="#prison" id="linkss">
+        <button id="btncats">Prison Life</button>
+    </a>
+    <a href="#lifein" id="linkss">
+        <button id="btncat3">Life in Paradise</button>
+    </a>
+    <a href="#combat" id="linkss">
+        <button id="btncat4">Combat Warriors</button>
+    </a>
+    <a href="#dahood" id="linkss">
+        <button id="btncat5">Da hood</button>
+    </a>
+    <a href="#arsenal" id="linkss">
+        <button id="btncat6">Arsenal</button>
+    </a>
+    <a href="#disaster" id="linkss">
+        <button id="btncat7">NeutralDisaster Survival</button>
+    </a>
+</div>
 
-<p> <span class="ToSTitle">Brookhaven Scripts (1) </span> <br> <br> loadstring(game:HttpGet("https://gist. <br>
-     git
-     hubusercontent.com/TurkOyuncu99 <br> /608 
-      32e7d04766a6381194d7502fbb1e <br> 8/raw 
-       /fbecd900a62e1fa054998f020844<br>75b6c4 
-        ed8f18/w <br> oah", true))()</p>
+<button id="btncat1">Games</button>
+
+<div id="scripts">
+
+<p id="brookhaven"> <span class="ToSTitle">Brookhaven Scripts (1) </span> <br> <br> loadstring(game:HttpGet("https://gi <br> st.githubusercontent.com/TurkOy <br> uncu99/60832e7d04766a6381194d75 <br> 02fbb1e8/raw/fb<br>ecd900a62e1fa0549 <br> 98f02084475b6c4ed8f18/woah", true))()</p>
 <br> <br>
-<p> <span class="TosTitle">Prison Life Scripts (3) </span>  <br> <br>
+<p id="prison"> <span class="TosTitle">Prison Life Scripts (3) </span>  <br> <br>
 <a href="https://pastebin.com/FqdAbZYS" target="_blank">Prison Life Script</a><br> <br>
 <a href="https://pastebin.com/FAXBKd93" target="_blank">Prison Life Script 2</a> <br> <br>
 <a href="https://pastebin.com/VHnxgyBQ" target="_blank"> Prison Life Script 3</a> </p>
 <br> <br>
-<p> <span class="ToSTitle">Life in Paradise Scripts (1) </span></p>
+<p id="lifein"> <span class="ToSTitle">Life in Paradise Scripts (1) </span></p>
 <br> <br>
 
 <p> <a href="https://pastebin.com/sRpRiUyM" target="_blank"  >Life In Paradise Script</a></p>
  <br> <br>
- <p> <span class="ToSTitle">Combat Warriors Scripts (1) </span></p>
+ <p id="combat"> <span class="ToSTitle">Combat Warriors Scripts (1) </span></p>
 <br> <br>
-  <p> loadstring(game:HttpGet("https://raw.git<br>hubusercontent.com/crossza<br>y1/dogeware/main/combat%20war<br>riars.lua"))() </p>
+  <p> loadstring(game:HttpGet <br> ("https://raw.githubusercontent.c <br> om/crosszay1/dogeware/main/combat <br> %20warriars.lua"))() </p>
 <br> <br>
 
-<p> <span class="ToSTitle">Da hood Scripts (3) </span></p>
+<p id="dahood"> <span class="ToSTitle">Da hood Scripts (3) </span></p>
 <br> <br>
-<p>loadstring(game:HttpGet("https://raw.<br>githubusercontent.com/lerkermer/lua-pro<br>jects/master/SwagModeV002"))()
+<p>loadstring(game:HttpGet( <br> "https://raw.githubusercontent.co <br> m/lerkermer/lua-projec <br> ts/master/SwagModeV002"))()
 </p>
 <br>
 <p class="end">-----</p>
 <br>
-<p>loadstring(game:GetObjects("rbxasseti<br>d://5812737894")[1].Source)()</p>
+<p>loadstring(game:Ge <br> tObjects("rbxassetid://58 <br> 12737894")[1].Source)()</p>
 <br> 
 <p class="end">-----</p>
 <br>
-<p>loadstring(game:HttpGet('https://raw.gi<br>thubusercontent.com/SpaceYes/<br>Lua/Main/DaHood.Lua'))()</p>
+<p>loadstring(game:HttpGe <br> t('https://raw.githubusercont <br> ent.com/SpaceYes/Lua/Ma <br> in/DaHood.Lua'))()</p>
 <br> <br>
-<p> <span class="ToSTitle">Arsenal Scripts (3)</span> </p>
+<p id="arsenal"> <span class="ToSTitle">Arsenal Scripts (3)</span> </p>
 <br><br>
-<p>loadstring(game:HttpGet("https://raw.g<br>ithubusercontent.com/HonestlyDex/D<br>exHub/main/V3.lua"))()</p>
+<p>loadstring(game:HttpGe <br> t("https://raw.githubuserconten <br> t.com/HonestlyDex/DexHu <br> b/main/V3.lua"))()</p>
 <br> 
 <p class="end">-----</p>
 <br>
@@ -278,16 +383,16 @@ body{
 <br> 
 <p class="end">-----</p>
 <br>
-<p>loadstring(game:HttpGet("https://bruh.k<br>eshsenpai.com/.lua"))()</p>
+<p>loadstring(game:HttpGet( <br> "https://bruh.keshsenp <br> ai.com/.lua"))()</p>
 <br> <br>
-<p> <span class="ToSTitle">Neutral Disaster Survival Scripts (3)</span> </p>
+<p id="disaster"> <span class="ToSTitle">Neutral Disaster Survival Scripts (3)</span> </p>
 <br> <br>
-<p>loadstring(game:HttpGet("https://raw.g<br>ithubusercontent.com/2d<br>
-generalspam1/script<br>s-and-stuff/master/scr<br>ipts/LoadstringUjHI6RQpz2o8", true))()</p>
+<p>loadstring(game:HttpGe <br> t("https://raw.githubuser <br> content.com/2d<br>
+generalspam1/s <br> cripts-and-stuff/master <br> /scripts/LoadstringUj <br> HI6RQpz2o8", true))()</p>
 <br> 
 <p class="end">-----</p> 
 <br>
-<p>loadstring(game:HttpGet('https://ra<br>w.githubusercontent.com/9NL<br>K7/93qjoadnlaknwldk/main/main'))()</p>
+<p>loadstring(game:HttpG <br> et('https://raw.githubuserconte <br> nt.com/9NLK7/93qjoadnlakn <br> wldk/main/main'))()</p>
 <br>
 <p class="end">-----</p>
 <br>
@@ -295,5 +400,82 @@ generalspam1/script<br>s-and-stuff/master/scr<br>ipts/LoadstringUjHI6RQpz2o8", t
 <br>
 <br>
 </div>
+
 </body>
+<script>
+          document.getElementById("links").style.width="0px"
+        document.getElementById("links").style.height="0px"
+    document.getElementById("links").style.visibility="hidden";
+    document.getElementById("btncat1").onclick = function(){
+        document.getElementById("btncat1").style.visibility="hidden"
+        document.getElementById("scripts").style.visibility="hidden"
+        document.getElementById("links").style.visibility="visible"
+        document.getElementById("links").style.width="300"
+        document.getElementById("links").style.height="350px"
+         document.getElementById("scripts").style.height="0px"
+    }
+    document.getElementById("btncat").onclick = function(){
+        document.getElementById("btncat1").style.visibility="visible"
+        document.getElementById("scripts").style.visibility="visible"
+        document.getElementById("links").style.visibility="hidden"
+        document.getElementById("links").style.width="0px"
+        document.getElementById("links").style.height="0px"
+        document.getElementById("scripts").style.width="300px"
+        document.getElementById("scripts").style.height="450px"
+    }
+    document.getElementById("btncats").onclick = function(){
+        document.getElementById("btncat1").style.visibility="visible"
+        document.getElementById("scripts").style.visibility="visible"
+        document.getElementById("links").style.visibility="hidden"
+        document.getElementById("links").style.width="0px"
+        document.getElementById("links").style.height="0px"
+        document.getElementById("scripts").style.width="300px"
+        document.getElementById("scripts").style.height="450px"
+    }
+    document.getElementById("btncat3").onclick = function(){
+        document.getElementById("btncat1").style.visibility="visible"
+        document.getElementById("scripts").style.visibility="visible"
+        document.getElementById("links").style.visibility="hidden"
+        document.getElementById("links").style.width="0px"
+        document.getElementById("links").style.height="0px"
+        document.getElementById("scripts").style.width="300px"
+        document.getElementById("scripts").style.height="450px"
+    }
+    document.getElementById("btncat4").onclick = function(){
+        document.getElementById("btncat1").style.visibility="visible"
+        document.getElementById("scripts").style.visibility="visible"
+        document.getElementById("links").style.visibility="hidden"
+        document.getElementById("links").style.width="0px"
+        document.getElementById("links").style.height="0px"
+        document.getElementById("scripts").style.width="300px"
+        document.getElementById("scripts").style.height="450px"
+    }
+    document.getElementById("btncat5").onclick = function(){
+        document.getElementById("btncat1").style.visibility="visible"
+        document.getElementById("scripts").style.visibility="visible"
+        document.getElementById("links").style.visibility="hidden"
+        document.getElementById("links").style.width="0px"
+        document.getElementById("links").style.height="0px"
+        document.getElementById("scripts").style.width="300px"
+        document.getElementById("scripts").style.height="450px"
+    }
+    document.getElementById("btncat6").onclick = function(){
+        document.getElementById("btncat1").style.visibility="visible"
+        document.getElementById("scripts").style.visibility="visible"
+        document.getElementById("links").style.visibility="hidden"
+        document.getElementById("links").style.width="0px"
+        document.getElementById("links").style.height="0px"
+        document.getElementById("scripts").style.width="300px"
+        document.getElementById("scripts").style.height="450px"
+    }
+    document.getElementById("btncat7").onclick = function(){
+        document.getElementById("btncat1").style.visibility="visible"
+        document.getElementById("scripts").style.visibility="visible"
+        document.getElementById("links").style.visibility="hidden"
+        document.getElementById("links").style.width="0px"
+        document.getElementById("links").style.height="0px"
+        document.getElementById("scripts").style.width="300px"
+        document.getElementById("scripts").style.height="450px"
+    }
+</script>
 </html>
